@@ -1,0 +1,30 @@
+/* Table */
+
+table.table-bordered {
+  border: 1px solid black !important;
+}
+
+table.table-bordered>thead>tr>th {
+  border: 1px solid black !important;
+}
+
+table.table-bordered>tbody>tr>td {
+  border: 1px solid black !important;
+}
+
+.table>thead>tr>th{
+  background-color: #069A8E;
+  color: white;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th {
+  background-color: #34b6a0;
+  color: white;
+}
+
+.table-striped>tbody>tr:nth-child(even)>td,
+.table-striped>tbody>tr:nth-child(even)>th {
+  background-color: #26a892;
+  color: white;
+}
