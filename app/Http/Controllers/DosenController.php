@@ -8,15 +8,15 @@ use App\Models\Dosen;
 
 class DosenController extends Controller
 {
-        //Insert
-    public function insert(){
+        //create
+    public function create(){
         
         //RAW
-        $sql = DB::insert("INSERT INTO dosen (nidn,nama,jenis_kelamin,alamat,tempat_lahir,tanggal_lahir,photo,created_at,updated_at) VALUES ('10079', 'Hilman M.Kom','Laki-Laki','Jl.segaran','Karawang','1995-08-06','PhotoHilman.png',now(),now())");
+        $sql = DB::create("CRAETE INTO dosen (nidn,nama,jenis_kelamin,alamat,tempat_lahir,tanggal_lahir,photo,created_at,updated_at) VALUES ('10079', 'Hilman M.Kom','Laki-Laki','Jl.segaran','Karawang','1995-08-06','PhotoHilman.png',now(),now())");
         dump($sql);
 
         //SB
-        $sql1 = DB::table('dosen')->insert(
+        $sql1 = DB::table('dosen')->create(
             [
                 'nidn' => '10087',
                 'nama' => 'Saman S.Kom',
@@ -48,11 +48,11 @@ class DosenController extends Controller
             dump($sql2);
     }
 
-    //Select
-    public function select(){
+    //read
+    public function read(){
 
         //RAW
-        $sql = DB::select("SELECT * FROM dosen");
+        $sql = DB::read("READ* FROM dosen");
         dd($sql);
 
         //SB

@@ -21,22 +21,22 @@ Route::get('/', function () {
 });
 
 Route::controller(MatakuliahController::class)->group(function () {
-    Route::get('/insertmatkul', 'insert');
-    Route::get('/selectmatkul', 'select');
+    Route::get('/creatematkul', 'create');
+    Route::get('/readmatkul', 'read');
     Route::get('/updatematkul', 'update');
     Route::get('/deletematkul', 'delete');
 });
 
 Route::controller(MahasiswaController::class)->group(function () {
-    Route::get('/insertmhs', 'insert');
-    Route::get('/selectmhs', 'select');
+    Route::get('/createmhs', 'create');
+    Route::get('/readmhs', 'read');
     Route::get('/updatemhs', 'update');
     Route::get('/deletemhs', 'delete');
 });
 
 Route::controller(DosenController::class)->group(function () {
-    Route::get('/insertdosen', 'insert');
-    Route::get('/selectdosen', 'select');
+    Route::get('/createdosen', 'create');
+    Route::get('/readdosen', 'read');
     Route::get('/updatedosen', 'update');
     Route::get('/deletedosen', 'delete');
 });
